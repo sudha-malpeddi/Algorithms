@@ -33,7 +33,6 @@ public class TwoSum {
         for (int i = 0; i < nums.length; i++) {
             int diff = target-nums[i];
             if(map.containsKey(diff)){
-                System.out.println(map.get(diff) +"  "+i);
                 return new int[]{map.get(diff),i};
             }
             map.put(nums[i], i);
@@ -43,6 +42,10 @@ public class TwoSum {
 
     public static void main(String[] args) {
         TwoSum twoSum = new TwoSum();
-        twoSum.twoSum(nums, 9);
+        int[] indices = twoSum.twoSum(nums, 9);
+
+        for (int j = 0; j < indices.length; j++){
+            System.out.println(indices[j]);
+        }
     }
 }

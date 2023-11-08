@@ -64,6 +64,8 @@ public class GroupAnagrams {
 
     public static void main(String[] args) {
         GroupAnagrams ga = new GroupAnagrams();
-        System.out.println(ga.groupAnagrams(ga.strs));
+        List<List<String>> res = ga.groupAnagrams(ga.strs);
+
+        res.stream().forEach(System.out::println);
     }
 }
