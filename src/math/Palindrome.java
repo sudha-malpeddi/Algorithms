@@ -2,10 +2,11 @@ package math;
 
 public class Palindrome {
     public static void main(String[] args) {
-        System.out.println(isNumberPalindrome(1321));
+        System.out.println(isNumberPalindrome());
     }
 
-    private static boolean isNumberPalindrome(int num) {
+    private static boolean isNumberPalindrome() {
+        int num = 1321;
         int div = 1;
         while(num > div * 10){
             div *= 10;
